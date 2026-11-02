@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnaMemo 〜your little office bird〜 | Glassy-labo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <!-- 📌 追加：Vercel Analyticsの初期化設定 -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+            },
+            accent: {
+              500: '#f59e0b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- ヘッダー -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🐤</span>
+        <span class="font-bold text-xl tracking-tight text-slate-900">EnaMemo</span>
+        <span class="text-xs text-slate-400 hidden sm:inline">by Glassy-labo</span>
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+        <a href="#concept" class="hover:text-brand-600 transition">コンセプト</a>
+        <a href="#features" class="hover:text-brand-600 transition">機能</a>
+        <a href="#pricing" class="hover:text-brand-600 transition">料金</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="https://app-enamemo.vercel.app/login" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition hidden sm:block">ログイン</a>
+        <a href="https://app-enamemo.vercel.app/signup" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-sm hover:shadow transition">無料で試す</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-gradient-to-b from-brand-50/50 to-slate-50">
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full border border-brand-100 shadow-sm text-xs text-brand-700 font-medium mb-6">
+        <span>✨ 忙しい毎日に、小さな余白を</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight mb-6">
+        デスクワークに小さな余白を。<br class="hidden sm:inline">
+        オフィスに寄り添う、あなたの小鳥。
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+        業務を助けるだけでなく、日々の仕事にちょっとした楽しみや会話を生み出したい。<br class="hidden md:inline">
+        EnaMemo（エナメモ）は、忙しいあなたとチームの心に余裕をつくるメモ＆ツールアプリです。
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://app-enamemo.vercel.app/signup" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center">
+          今すぐ無料で使ってみる
+        </a>
+      </div>
+      <p class="text-xs text-slate-400 mt-3">※ クレジットカード登録不要・即日ご利用いただけます</p>
+    </div>
+  </section>
+
+  <!-- ブランドコンセプト（理念） -->
+  <section id="concept" class="py-16 md:py-24 bg-white border-y border-slate-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="text-brand-600 text-sm font-semibold tracking-wider uppercase">Our Philosophy</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2 mb-8">芝生でごろ寝できる余白をつくる</h2>
+      <div class="bg-brand-50/60 p-8 sm:p-12 rounded-3xl border border-brand-100 text-left max-w-3xl mx-auto">
+        <p class="text-slate-700 leading-relaxed mb-4">
+          世の中には業務改善や効率化をうたうサービスがたくさんあります。しかし私たちが目指しているのは、ただ作業を速くすることだけではありません。
+        </p>
+        <p class="text-slate-700 leading-relaxed mb-4">
+          業務の先にある**「時間や心に小さな余裕」**を生み出すこと。
+          毎日を同じ業務の繰り返しで過ごすよりも、仕事の中でちょっとした楽しみや喜びが生まれれば、前向きな変化が起こると信じています。
+        </p>
+        <p class="text-slate-700 leading-relaxed font-medium text-brand-700">
+          ツールを通じてスタッフ間で会話が弾み、笑いが生まれる。そんな「心に余白のある温かいオフィス環境」をEnaMemoはお届けします。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 機能紹介 -->
+  <section id="features" class="py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <span class="text-brand-600 text-sm font-semibold tracking-wider uppercase">Features</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">EnaMemoが届ける3つのポイント</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 text-xl font-bold mb-6">
+            <i class="fa-solid fa-[#feather-pointed]"></i>1
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">直感的で迷わないシンプルなメモ機能</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            複雑な設定は一切不要。サッと開いて直感的に記録を残せるので、忙しい業務を邪魔しません。
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 text-xl font-bold mb-6">
+            <i class="fa-solid fa-comments"></i>2
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">会話のきっかけを作る共有体験</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            スタッフ同士で気づきやアイデアをスムーズに共有。「これ助かったよ！」から自然なコミュニケーションが生まれます。
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-brand-600 text-xl font-bold mb-6">
+            <i class="fa-solid fa-mug-hot"></i>3
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">ほっと一息つけるデスクの相棒</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            愛らしい小鳥のモチーフが、無機質になりがちなPC画面にやさしい存在感をもたらし、気持ちを和ませます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金プラン (Stripe審査対応) -->
+  <section id="pricing" class="py-16 md:py-24 bg-white border-t border-slate-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="text-brand-600 text-sm font-semibold tracking-wider uppercase">Pricing</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">シンプルで安心な料金プラン</h2>
+        <p class="text-slate-500 text-sm mt-2">いつでもキャンセル・変更が可能です</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <!-- フリープラン -->
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">フリープラン</h3>
+            <p class="text-xs text-slate-500 mb-6">個人での試用・まずは使い心地を確認したい方に</p>
+            <div class="text-3xl font-extrabold text-slate-900 mb-6">¥0 <span class="text-xs text-slate-500 font-normal">/ 永久無料</span></div>
+            <ul class="text-sm text-slate-600 space-y-3 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i>基本メモ機能</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i>ローカル保存</li>
+            </ul>
+          </div>
+          <a href="https://app-enamemo.vercel.app/signup" class="w-full block text-center bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold py-3 rounded-xl transition text-sm">無料で始める</a>
+        </div>
+
+        <!-- プレミアムプラン -->
+        <div class="bg-gradient-to-b from-brand-500 to-brand-600 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-4 right-4 bg-accent-500 text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full">RECOMMENDED</div>
+          <div>
+            <h3 class="text-lg font-bold mb-2">プレミアムプラン</h3>
+            <p class="text-xs text-brand-100 mb-6">チームでの共有・全ての機能を活用したい方に</p>
+            <div class="text-3xl font-extrabold mb-6">¥500 <span class="text-xs text-brand-200 font-normal">/ 月（税込）</span></div>
+            <ul class="text-sm text-brand-50 space-y-3 mb-8">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-white"></i>フリープランの全機能</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-white"></i>クラウド自動同期</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-white"></i>チーム共有ワークスペース</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-white"></i>優先サポート</li>
+            </ul>
+          </div>
+          <a href="https://app-enamemo.vercel.app/signup" class="w-full block text-center bg-white text-brand-700 hover:bg-brand-50 font-bold py-3 rounded-xl transition text-sm shadow">14日間無料で試す</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター (Stripe審査対応) -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <div class="flex items-center gap-2 text-white font-bold text-base mb-1">
+            <span>🐤</span> EnaMemo
+          </div>
+          <p class="text-slate-500">Operated by Glassy-labo</p>
+        </div>
+        <div class="flex flex-wrap gap-6 justify-center">
+          <a href="#tokushoho" onclick="alert('【特定商取引法に基づく表記】\n\n■ 販売事業者\nGlassy-labo（グラッシーラボ）\n\n■ 運営責任者\n[日高　常博]\n\n■ 所在地\n[バーチャルオフィスの郵便番号・住所をご入力ください]\n※請求があった場合、遅滞なく電子メール等により開示いたします。\n\n■ 問い合わせ先\nメールアドレス：[お問い合わせ用メールアドレス]\n電話番号：[050等で取得した事業用電話番号]\n（受付時間：平日 10:00〜18:00）\n\n■ 販売価格\n・フリープラン：無料\n・プレミアムプラン：月額500円（税込）\n\n■ 商品代金以外の必要料金\nインターネット接続料金その他の電気通信回線の通信諸費用はお客様のご負担となります。\n\n■ 支払方法\nクレジットカード決済（Stripe）\n\n■ 代金の支払時期\n初回お申し込み時に決済され、翌月以降は毎月同日に自動継続課金されます。\n\n■ サービス提供の時期\n決済完了後、即時ご利用いただけます。\n\n■ 返品・解約・キャンセルについて\nデジタルコンテンツの特性上、決済完了後の返金・返品はお受けできません。\n解約はアプリ内の設定画面（またはマイページ）からいつでも可能です。次回更新日の前日までに解約手続きを行っていただければ、次回以降の請求は発生いたしません。')" class="hover:text-white transition">特定商取引法に基づく表記</a>
+
+          <a href="#privacy" onclick="alert('【プライバシーポリシー】\n\n1. 個人情報の収集について\n当事業（Glassy-labo）は、本サービス「EnaMemo」の提供にあたり、ユーザーのアカウント情報（メールアドレス等）および利用状況データを取得します。\n\n2. 利用目的\n取得した情報は、サービスの提供・運営、本人確認、カスタマーサポート、重要なお知らせの通知、およびサービス改善のために利用いたします。\n\n3. 決済情報の取り扱い\nクレジットカード情報等の決済データは、決済代行会社であるStripe, Inc.を通じて安全に処理されます。当事業のサーバー内にクレジットカード情報を保存・保持することはありません。\n\n4. 第三者提供の制限\n法令に基づく場合を除き、ユーザーの同意を得ずに個人情報を第三者に提供・開示することはありません。\n\n5. お問い合わせ窓口\n個人情報の取り扱いに関するお問い合わせは、特商法表記に記載の問い合わせ先までご連絡ください。')" class="hover:text-white transition">プライバシーポリシー</a>
+
+          <a href="#terms" onclick="alert('【利用規約】\n\n1. 適用\n本規約は、Glassy-laboが提供する「EnaMemo」の利用条件を定めるものです。ユーザーは本規約に従って本サービスをご利用いただけます。\n\n2. アカウント管理\nユーザーは自己の責任においてアカウント情報を適切に管理するものとし、第三者への譲渡・貸与はできません。\n\n3. 禁止事項\n法令または公序良俗に反する行為、本サービスの運営を妨害する行為、他のユーザーや第三者の権利を侵害する行為を禁止します。\n\n4. サービスの変更・終了\n当事業は、事前の通知をもって本サービスの内容を変更または提供を終了することができるものとします。\n\n5. 免責事項\n当事業は、本サービスの利用によりユーザーに生じた損害について、故意または重大な過失がある場合を除き、一切の責任を負わないものとします。')" class="hover:text-white transition">利用規約</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-slate-800 text-center text-slate-600">
+        &copy; Glassy-labo. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vercel Analytics スクリプト -->
+  <script defer src="/_vercel/insights/script.js"></script>
+
+
+</body>
+</html>
